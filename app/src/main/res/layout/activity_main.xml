@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
@@ -27,6 +28,8 @@
             android:layout_height="wrap_content"
             app:ccp_defaultNameCode="US"
             android:layout_marginRight="30px"
+            app:ccp_contentColor="#FFFFFF"
+            app:ccpDialog_backgroundColor="#C0C0C0"
             ></com.hbb20.CountryCodePicker>
 
 
@@ -50,4 +53,15 @@
         tools:layout_editor_absoluteY="231dp"
         android:onClick="contactOnWhatsApp"
         android:layout_below="@+id/ll"/>
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Dark Mode"
+            />
+    </LinearLayout>
+
+</android.widget.LinearLayout>
