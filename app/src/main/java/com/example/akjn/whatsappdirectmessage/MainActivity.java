@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.view.View;
 import android.content.Intent;
 import android.net.Uri;
-
+import android.widget.Toast;
 import com.hbb20.CountryCodePicker;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,9 +26,19 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    public void contactOnWhatsApp(View v) {
+    EditText phoneNumberField;
 
-        EditText phoneNumberField = (EditText)findViewById(R.id.inputField);
+    public void contactOnWhatsApp(View v) {
+        phoneNumberField = (EditText)findViewById(R.id.inputField);
+        String phNumber = phoneNumberField.getText().toString();
+        if (phNumber.length() == 10 || phNumber.length() == 12) {
+            numberIsCorrect();
+        } else {
+            Toast.makeText(MainActivity.this, "Please enter a correct number", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void numberIsCorrect(){
 
 //  CODE FOR COUNTRY CODE SPINNER
 
@@ -42,5 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone="+phoneNumber));
         startActivity(browserIntent);
+
+        phoneNumberField.setText("");
     }
 }
