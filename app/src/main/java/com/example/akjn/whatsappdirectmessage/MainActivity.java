@@ -2,16 +2,19 @@ package com.example.akjn.whatsappdirectmessage;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.support.v7.app.AppCompatDelegate;
 import android.util.DisplayMetrics;
 
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
+
 import android.widget.ArrayAdapter;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -42,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        if(AppCompatDelegate.getDefaultNightMode()==AppCompatDelegate.MODE_NIGHT_YES)
+        {
+            setTheme(R.style.DarkTheme);
+        }
+        else
+            setTheme(R.style.AppTheme);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -111,7 +122,24 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
-        public void contactOnWhatsApp (View v){
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id)
+        {
+            case R.id.dark_mode:
+                //add code here
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                Intent i=new Intent(MainActivity.this,MainActivity.class);
+                startActivity(i);
+                finish();
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+    }
+
+    public void contactOnWhatsApp (View v){
 
             EditText phoneNumberField = (EditText) findViewById(R.id.inputField);
 
@@ -129,6 +157,7 @@ public class MainActivity extends AppCompatActivity {
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=" + phoneNumber));
             startActivity(browserIntent);
         }
+
     //Creating the Actions for the menu items
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -147,4 +176,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+    public void clearNumber(View view) {
+        EditText hello = (EditText)findViewById(R.id.inputField);
+        hello.setText("");
+    }
 }
+
