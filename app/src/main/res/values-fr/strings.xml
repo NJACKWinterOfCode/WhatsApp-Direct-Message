@@ -7,6 +7,7 @@
     <string name="dark_menu">Mode sombre</string>
 
     <string name="aboutus">À propos de nous</string>
+
     <string name="select_lang">Choisir la langue</string>
     <string name="s_exp">Vous avez ici la possibilité de sélectionner la langue dans laquelle vous souhaitez afficher le contenu de l\'application.</string>
     <string name="cc">Code postal</string>
@@ -14,6 +15,7 @@
     <string name="p_no_exp">Ici, vous devez entrer le numéro de téléphone que vous souhaitez envoyer un message.</string>
     <string name="mssg_wap">Message sur WhatsApp</string>
     <string name="mssg_wap_exp">En appuyant sur ce bouton, vous êtes redirigé vers l\'application WHATSAPP, où vous pouvez envoyer un message sans enregistrer le numéro. </string>
+
     <string name="aboutustext">
 L\'application est créée par M. Akshat Jain. C\'est un projet sous NWoC. Mlle Roshni Ram et M. Akshat Jain sont les mentors du projet.</string>
     <string name="contri">OAutres contributeurs</string>
@@ -23,6 +25,7 @@ L\'application est créée par M. Akshat Jain. C\'est un projet sous NWoC. Mlle 
     <string name="Mentor_name">Roshni Ram</string>
     <string name="amartya">Amartya Mondal</string>
     <string name="aomenath">Somenath</string>
+
 
     <string name="clear">clair</string>
 
