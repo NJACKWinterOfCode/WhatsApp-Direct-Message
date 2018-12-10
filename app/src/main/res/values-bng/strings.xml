@@ -25,4 +25,18 @@
 
 
 
+    <string name="aboutustext">Tতিনি অ্যাপ তৈরি করেছেন অক্ষত জৈন। এটা এনডব্লিউসিএর অধীনে একটি প্রকল্প। মিস রোশনি রাম ও জনাব অক্ষত জৈন এই প্রকল্পটি পরিচালনা করছেন।</string>
+    <string name="contri">অন্যান্য অবদানকারী</string>
+    <string name="creator">স্রষ্টা</string>
+    <string name="Mentor">
+পরামর্শদাতা</string>
+    <string name="creator_name">
+অক্ষত জৈন</string>
+    <string name="Mentor_name">রোশনি রাম</string>
+    <string name="amartya">
+অমর্ত্য মন্ডল</string>
+    <string name="aomenath">Somenath</string>
+
+<string name="buttonsave_text">যোগাযোগ সংরক্ষণ করুন</string>
+
 </resources>
