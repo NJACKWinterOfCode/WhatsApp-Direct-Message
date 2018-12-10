@@ -5,6 +5,7 @@
     <string name="button_text">Message on WhatsApp</string>
     <string name="help_menu">Help</string>
     <string name="dark_menu">Dark Mode</string>
+
     <string name="aboutus">About Us</string>
     <string name="select_lang">Select Language</string>
     <string name="s_exp">Here you are given a chance to select the language in which you want to view the app contents.</string>
@@ -13,6 +14,9 @@
     <string name="p_no_exp">Here,you need to enter the Phone Number whom you want to message.</string>
     <string name="mssg_wap">Message on WhatsApp</string>
     <string name="mssg_wap_exp">Pressing this button, redirects to WHATSAPP app, where you can send message without saving the number. </string>
+
+
+    <string name="clear">Clear</string>
 
 
 </resources>
