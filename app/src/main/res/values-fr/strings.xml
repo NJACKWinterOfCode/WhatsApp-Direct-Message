@@ -6,4 +6,7 @@
     <string name="help_menu">Aidez-moi</string>
     <string name="dark_menu">Mode sombre</string>
     <string name="clear">clair</string>
+    <string name="bengali">বাঙালি</string>
+    <string name="hindi">हिंदी</string>
+    <string name="french">français</string>
 </resources>

@@ -61,9 +61,9 @@ public class MainActivity extends AppCompatActivity {
         List<String> list = new ArrayList<String>();
         list.add("Select Language");
         list.add("English");
-        list.add("Hindi");
-        list.add("Bengali");
-        list.add("French");
+        list.add(getString(R.string.hindi));
+        list.add(getString(R.string.bengali));
+        list.add(getString(R.string.french));
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, list);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);

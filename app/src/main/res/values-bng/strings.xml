@@ -6,5 +6,7 @@
     <string name="help_menu">সাহায্য করুন</string>
     <string name="dark_menu">গাঢ় মোড</string>
     <string name="clear">পরিষ্কার</string>
-
+    <string name="bengali">বাঙালি</string>
+    <string name="hindi">हिंदी</string>
+    <string name="french">français</string>
 </resources>
