@@ -5,8 +5,14 @@
 
         android:title="@string/dark_menu"/>
 
+    <item android:id="@+id/lightmode"
+        android:title="@string/lightmode"
+        />
+
     <item android:id="@+id/help"
         android:title="@string/help_menu" />
+
+
     
 
 
