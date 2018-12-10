@@ -5,6 +5,7 @@
     <string name="phone_number_hint">Numéro de téléphone</string>
     <string name="help_menu">Aidez-moi</string>
     <string name="dark_menu">Mode sombre</string>
+
     <string name="aboutus">À propos de nous</string>
     <string name="select_lang">Choisir la langue</string>
     <string name="s_exp">Vous avez ici la possibilité de sélectionner la langue dans laquelle vous souhaitez afficher le contenu de l\'application.</string>
@@ -22,4 +23,7 @@ L\'application est créée par M. Akshat Jain. C\'est un projet sous NWoC. Mlle 
     <string name="Mentor_name">Roshni Ram</string>
     <string name="amartya">Amartya Mondal</string>
     <string name="aomenath">Somenath</string>
+
+    <string name="clear">clair</string>
+
 </resources>
