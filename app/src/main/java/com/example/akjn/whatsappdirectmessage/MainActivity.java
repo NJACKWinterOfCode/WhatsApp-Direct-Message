@@ -184,7 +184,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(ContactsContract.Intents.Insert.ACTION);
         intent.setType(ContactsContract.RawContacts.CONTENT_TYPE);
         mPhoneNumber= (EditText) findViewById(R.id.inputField);
-        intent.putExtra(ContactsContract.Intents.Insert.PHONE, mPhoneNumber.getText());
+        CountryCodePicker cpp = (CountryCodePicker) findViewById(R.id.cpp);
+        String mNo= cpp.getFullNumberWithPlus() + mPhoneNumber.getText();
+        intent.putExtra(ContactsContract.Intents.Insert.PHONE, mNo);
         startActivity(intent);
 
     }
