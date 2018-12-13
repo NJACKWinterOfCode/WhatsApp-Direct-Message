@@ -66,8 +66,8 @@ public class MainActivity extends AppCompatActivity {
             case "hi":
                 setLocale("hi");
                 break;
-            case "bng":
-                setLocale("bng");
+            case "bn":
+                setLocale("bn");
                 break;
             case "fr":
                 setLocale("fr");
