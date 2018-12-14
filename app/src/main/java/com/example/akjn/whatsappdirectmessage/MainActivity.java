@@ -41,8 +41,6 @@ import com.hbb20.CountryCodePicker;
 
 public class MainActivity extends AppCompatActivity {
     Spinner spinner;
-    Locale myLocale;
-    String currentLanguage = "en", currentLang;
     private EditText mPhoneNumber = null;
 
     @Override
@@ -58,39 +56,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        currentLanguage=Locale.getDefault().getDisplayLanguage();
-        switch (currentLanguage) {
-            case "en":
-                setLocale("en");
-                break;
-            case "hi":
-                setLocale("hi");
-                break;
-            case "bng":
-                setLocale("bng");
-                break;
-            case "fr":
-                setLocale("fr");
-                break;
-
-                }
-    }
-
-    public void setLocale(String localeName) {
-
-        myLocale = new Locale(localeName);
-        Resources res = getResources();
-        DisplayMetrics dm = res.getDisplayMetrics();
-        Configuration conf = res.getConfiguration();
-        conf.locale = myLocale;
-        res.updateConfiguration(conf, dm);
-        Intent refresh = new Intent(this, MainActivity.class);
-        refresh.putExtra(currentLang, localeName);
-        startActivity(refresh);
 
     }
-
-
 
         @Override
         public boolean onCreateOptionsMenu(Menu menu)
