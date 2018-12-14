@@ -7,8 +7,6 @@
     <string name="dark_menu">গাঢ় মোড</string>
 
 
-    <string name="aboutus">আমাদের সম্পর্কে</string>
-
     <string name="select_lang">ভাষা নির্বাচন কর</string>
     <string name="s_exp">এখানে আপনি এমন ভাষা নির্বাচন করার সুযোগ পাবেন যেখানে আপনি অ্যাপ্লিকেশন সামগ্রী দেখতে চান।</string>
     <string name="cc">কান্ট্রি কোড</string>
@@ -23,19 +21,6 @@
     <string name="clear">পরিষ্কার</string>
     <string name="buttonsave_text">যোগাযোগ সংরক্ষণ করুন</string>
 
-
-
-    <string name="aboutustext">Tতিনি অ্যাপ তৈরি করেছেন অক্ষত জৈন। এটা এনডব্লিউসিএর অধীনে একটি প্রকল্প। মিস রোশনি রাম ও জনাব অক্ষত জৈন এই প্রকল্পটি পরিচালনা করছেন।</string>
-    <string name="contri">অন্যান্য অবদানকারী</string>
-    <string name="creator">স্রষ্টা</string>
-    <string name="Mentor">
-পরামর্শদাতা</string>
-    <string name="creator_name">
-অক্ষত জৈন</string>
-    <string name="Mentor_name">রোশনি রাম</string>
-    <string name="amartya">
-অমর্ত্য মন্ডল</string>
-    <string name="aomenath">Somenath</string>
 
 
 
