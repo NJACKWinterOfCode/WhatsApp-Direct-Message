@@ -48,13 +48,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-//        if(AppCompatDelegate.getDefaultNightMode()==AppCompatDelegate.MODE_NIGHT_YES)
-//        {
-//            setTheme(R.style.DarkTheme);
-//        }
-//        else
-//            setTheme(R.style.AppTheme);
-
         ToggleTheme.setActivityTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -121,22 +114,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, help.class);
                 startActivity(intent);
                 break;
-            case R.id.dark_mode:
-                //add code here
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                Intent i=new Intent(MainActivity.this,MainActivity.class);
-                startActivity(i);
-                finish();
-                return true;
-
-            case R.id.lightmode:
-                //add code here
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                Intent ins=new Intent(MainActivity.this,MainActivity.class);
-                startActivity(ins);
-                finish();
-                return true;
-
 
             default:
                 return super.onOptionsItemSelected(item);
