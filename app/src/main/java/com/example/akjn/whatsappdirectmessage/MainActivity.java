@@ -20,6 +20,7 @@ import android.widget.ArrayAdapter;
 import android.view.Menu;
 import android.view.MenuInflater;
 
+import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 
@@ -36,6 +37,7 @@ import java.util.Locale;
 
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ToggleButton;
 
 import com.hbb20.CountryCodePicker;
 
@@ -46,15 +48,41 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        if(AppCompatDelegate.getDefaultNightMode()==AppCompatDelegate.MODE_NIGHT_YES)
-        {
-            setTheme(R.style.DarkTheme);
-        }
-        else
-            setTheme(R.style.AppTheme);
+//        if(AppCompatDelegate.getDefaultNightMode()==AppCompatDelegate.MODE_NIGHT_YES)
+//        {
+//            setTheme(R.style.DarkTheme);
+//        }
+//        else
+//            setTheme(R.style.AppTheme);
 
+        ToggleTheme.setActivityTheme(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final ToggleButton toggle = (ToggleButton) findViewById(R.id.toggleBtn);
+        if(ToggleTheme.getmTheme()==0)
+        {
+            toggle.setText(R.string.off);
+        }
+        else
+        {
+            toggle.setText(R.string.on);
+        }
+        toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(ToggleTheme.getmTheme()==0)
+                {
+                    ToggleTheme.setmTheme(1);
+                }
+                else
+                {
+                    ToggleTheme.setmTheme(0);
+                }
+                MainActivity.this.finish();
+                MainActivity.this.startActivity(new Intent(MainActivity.this, MainActivity.this.getClass()));
+
+            }
+        });
 
 
     }
