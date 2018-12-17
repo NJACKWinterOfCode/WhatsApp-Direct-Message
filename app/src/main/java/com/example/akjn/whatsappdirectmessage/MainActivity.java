@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.provider.ContactsContract;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatDelegate;
+import android.text.Html;
 import android.util.DisplayMetrics;
 
 import android.content.res.Configuration;
@@ -139,6 +140,14 @@ public class MainActivity extends AppCompatActivity {
     public void clearNumber(View view) {
         EditText hello = (EditText) findViewById(R.id.inputField);
         hello.setText("");
+    }
+    public void Share(View view)
+    {
+        mPhoneNumber=(EditText)findViewById(R.id.inputField);
+        Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+        sharingIntent.setType("text/html");
+        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, mPhoneNumber.getText());
+        startActivity(Intent.createChooser(sharingIntent,"Share using"));
     }
 }
 
