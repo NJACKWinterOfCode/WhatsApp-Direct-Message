@@ -10,18 +10,20 @@
         <item name="textcolor">#000</item>
         <item name="buttoncolor">#00574B</item>
         <item name="background">@drawable/whatsapp_background</item>
+        <item name="back">#BDBDBD</item>
 
 
     </style>
 
     <style name="DarkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimary">#000000</item>
         <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="backgroundcolor">#303030</item>
         <item name="textcolor">#FFF</item>
         <item name="buttoncolor">#00574B</item>
         <item name="background">@drawable/whatsapp_background_dark</item>
+        <item name="back">#212121</item>
     </style>
 
 

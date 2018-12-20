@@ -5,7 +5,7 @@
     style="@style/AppTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/background"
+    android:background="?attr/back"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     tools:context=".MainActivity"
