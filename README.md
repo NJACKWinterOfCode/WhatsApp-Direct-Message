@@ -20,3 +20,6 @@ $ git clone https://github.com/Akshat-Jain/WhatsApp-Direct-Message.git
 ```
 Then open in Android Studio.
 #### Screenshots
+![s1](https://user-images.githubusercontent.com/43093724/50356809-77c39980-0579-11e9-9e32-057cb479ab85.png)
+![s2](https://user-images.githubusercontent.com/43093724/50356810-798d5d00-0579-11e9-9588-286750d8d5e2.png)
+![ss3](https://user-images.githubusercontent.com/43093724/49703297-51bd0180-fc29-11e8-9667-7f84cc20ede8.png)
