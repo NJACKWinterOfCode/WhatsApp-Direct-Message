@@ -69,13 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText phoneNumberField = (EditText) findViewById(R.id.inputField);
         if (phoneNumberField.getText().toString().isEmpty()) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setCancelable(true);
-            builder.setTitle("Error");
-            builder.setMessage("Please Enter A Number");
-            AlertDialog alert = builder.create();
-            alert.getWindow().setGravity(Gravity.CENTER);
-            alert.show();
+            Alert_Dialog_Blank_Input();
         } else {
             //  CODE FOR COUNTRY CODE SPINNER
             CountryCodePicker cpp = (CountryCodePicker) findViewById(R.id.cpp);
@@ -92,13 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText phoneNumberField = (EditText) findViewById(R.id.inputField);
         if (phoneNumberField.getText().toString().isEmpty()) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setCancelable(true);
-            builder.setTitle("Error");
-            builder.setMessage("Please Enter A Number");
-            AlertDialog alert = builder.create();
-            alert.getWindow().setGravity(Gravity.CENTER);
-            alert.show();
+            Alert_Dialog_Blank_Input();
         } else {
             Intent intent = new Intent(ContactsContract.Intents.Insert.ACTION);
             intent.setType(ContactsContract.RawContacts.CONTENT_TYPE);
@@ -146,6 +134,16 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
         return true;
+    }
+
+    public void Alert_Dialog_Blank_Input() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(true);
+        builder.setTitle("Error");
+        builder.setMessage("Please Enter A Number");
+        AlertDialog alert = builder.create();
+        alert.getWindow().setGravity(Gravity.CENTER);
+        alert.show();
     }
 }
 
