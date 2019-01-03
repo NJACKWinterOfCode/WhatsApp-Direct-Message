@@ -3,45 +3,18 @@ package com.example.akjn.whatsappdirectmessage;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
 import android.provider.ContactsContract;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatDelegate;
-import android.util.DisplayMetrics;
-
-import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.MotionEvent;
-
-import android.widget.ArrayAdapter;
 import android.view.Menu;
 import android.view.MenuInflater;
-
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.PopupWindow;
-
 import android.widget.EditText;
 import android.view.View;
-import android.content.Intent;
 import android.net.Uri;
-import android.widget.AdapterView;
 import android.widget.Spinner;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-
-
-import android.widget.Toast;
-import android.widget.AdapterView.OnItemSelectedListener;
-
 import com.hbb20.CountryCodePicker;
 
 public class MainActivity extends AppCompatActivity {
