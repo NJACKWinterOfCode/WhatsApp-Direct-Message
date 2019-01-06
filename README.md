@@ -11,7 +11,7 @@ A simple app which saves you the effort of saving numbers as contacts if you wis
 
 ### Download the app
 
-You can download by clicking [here](https://github.com/Akshat-Jain/WhatsApp-Direct-Message/raw/master/apk/WhatsApp%20Direct%20Message.apk) :-)
+You can download by clicking [here](https://github.com/NJACKWinterOfCode/WhatsApp-Direct-Message/raw/master/apk/WhatsApp_Direct_Message.apk) :-)
 
 ### Install and contribute
 
